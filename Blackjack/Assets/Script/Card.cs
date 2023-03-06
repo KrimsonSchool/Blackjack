@@ -19,5 +19,7 @@ public class Card : MonoBehaviour
     void Update()
     {
         CardText.text = CardName;
+
+        GetComponent<SpriteRenderer>().color = new Color(Random.Range(0, 1f), Random.Range(0, 1f), Random.Range(0, 1f));
     }
 }
